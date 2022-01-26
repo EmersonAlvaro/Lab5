@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="static/css/mycss.css">
+    <link rel="stylesheet" href="static/css/w3.css">
+
+    <script src="https://kit.fontawesome.com/0a2edc91e7.js" crossorigin="anonymous"></script>
+
+    <!-- <script src="./index.js"></script> -->
+    <script src="static/js/myScrip.js"></script>
+
+    <title>Movies Room</title>
+    <link rel="shortcut icon" href="static/img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <section>
+
+        <article id="login_div">
+            <h2> Movies Room </h2>
+            <img src="static/img/favicon.ico" alt="" srcset="">
+            <br>
+            <input id="loginbtn" class="w3-button" type="button" value="Sign in with Google"  />
+            <!-- <input id="loginbtn" class="w3-button" type="button" value="Sign in with Google" onclick="openForm()" /> -->
+            <br>
+        </article>
+
+        <article class="form-popup" id="SignIn">
+
+            <form class="form-container">
+                <button style='font-size:24px'>Login <i class='fab fa-google'></i></button>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit" class="btn">Login</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </article>
+
+    </section>
+
+    <section id="main">
+
+
+
+</body>
+
+</html>

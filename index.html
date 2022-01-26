@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./static/css/mycss.css" />
+    <link rel="stylesheet" href="./static/css/w3.css" />
+
+    <script src="https://kit.fontawesome.com/0a2edc91e7.js" crossorigin="anonymous"></script>
+
+    <!-- <script src="./index.js"></script> -->
+    <script src="./static/js/myScrip.js"></script>
+
+    <title>Movies Room</title>
+    <link rel="shortcut icon" href="static/img/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+    <header id="header" class="w3-bar w3-border w3-black">
+        <!-- <ul> -->
+        <a href="index.html" class="w3-bar-item w3-button"><img src="static/img/favicon.ico" alt="" srcset=""
+                style="height: 28px; width: 28px" /></a>
+        <a id="logoutbtn" class="w3-bar-item w3-button w3-right w3-red">Logout</a>
+        <a id="wishlistbtn" class="w3-bar-item w3-button w3-right"><i class="fas fa-heart"
+                style="font-size: 28px; color: red"></i></a>
+        <a class="w3-bar-item w3-button w3-right">
+            <button><i class="fas fa-user-alt"> Username</i></button>
+        </a>
+        <!-- </ul> -->
+    </header>
+
+    <section class="w3-container">
+        <article id="login_div" class="w3-display-middle">
+            <h3 class="w3-center"><b> Movies Room </b></h3>
+            <img src="static/img/favicon.ico" alt="" srcset="" />
+
+            <div class="w3-center">
+                <input id="loginbtn" class="w3-btn w3-margin w3-teal" type="button" value="Sign in with Google" />
+            </div>
+        </article>
+
+        <article id="SignIn" class="w3-modal w3-animate-opacity">
+            <form class="w3-modal-content w3-card-4">
+                <header class="w3-container w3-teal">
+                    <span onclick="closeForm()" class="w3-button w3-large w3-display-topright">&times;</span>
+                    <div class="w3-center">
+                        <button style="font-size: 24px">
+                            Login <i class="fab fa-google"></i>
+                        </button>
+                    </div>
+                </header>
+                <div class="w3-container">
+                    <p>
+                        <label for="email"><b>Email</b></label>
+                        <input class="w3-input" type="text" placeholder="Enter Email" name="email" required />
+                    </p>
+                    <p>
+                        <label for="psw"><b>Password</b></label>
+                        <input class="w3-input" type="password" placeholder="Enter Password" name="psw" required />
+                    </p>
+                   <button type="submit" class="w3-btn w3-blue">Login</button>
+                </div>
+            </form>
+        </article>
+
+        <article id="main_list">
+            <h3>General List</h3>
+
+            <br />
+
+            <input class="w3-input" type="text" name="searchbar" placeholder="Search movies ..." id="" />
+
+            <br />
+            <div id="empty_mainlist">
+                <h2>Loading Movies ...</h2>
+            </div>
+
+            <table class="w3-table w3-bordered">
+                <tr>
+                    <th>Title</th>
+                    <th>Year</th>
+                    <th>Genre</th>
+                    <th>Add to Wishlist</th>
+                </tr>
+                <tr>
+                    <td>127 hours</td>
+                    <td>2017</td>
+                    <td>Action</td>
+                    <td>
+                        <a href="">
+                            <i class="fas fa-heart" style="font-size: 28px; color: red"></i></a>
+                    </td>
+                </tr>
+            </table>
+        </article>
+
+        <article id="wishlist">
+            <h3>Your Wishlist</h3>
+
+            <br />
+
+            <input class="w3-input" type="text" name="searchbar" placeholder="Search movies ..." id="" />
+
+            <br />
+
+            <div id="empty_wishlist">
+                <h2>You did not add any movies to wishlist</h2>
+                <input type="button" value="Movies list" />
+            </div>
+
+            <table class="w3-table w3-bordered">
+                <tr>
+                    <th>Title</th>
+                    <th>Year</th>
+                    <th>Genre</th>
+                    <th>Add to Wishlist</th>
+                </tr>
+                <tr>
+                    <td>127 hours</td>
+                    <td>2017</td>
+                    <td>Action</td>
+                    <td>
+                        <a href="">
+                            <i class="fas fa-heart-broken" style="font-size: 28px; color: red"></i></a>
+                    </td>
+                </tr>
+            </table>
+        </article>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="static/css/mycss.css" />
+    <link rel="stylesheet" href="static/css/w3.css" />
+
+    <script src="https://kit.fontawesome.com/0a2edc91e7.js" crossorigin="anonymous"></script>
+
+    <!-- <script src="./index.js"></script> -->
+    <script src="static/js/myScrip.js"></script>
+
+    <title>Movies Room</title>
+    <link rel="shortcut icon" href="static/img/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+    <header class="w3-bar w3-border w3-light-grey">
+        <!-- <ul> -->
+        <a href="mainlist.html" class="w3-bar-item w3-button"><img src="static/img/favicon.ico" alt="" srcset=""
+                style="height: 28px; width: 28px" /></a>
+        <a id="logoutbtn" class="w3-bar-item w3-button w3-right w3-red">Logout</a>
+        <a href="whislist.html" class="w3-bar-item w3-button w3-right"><i class="fas fa-heart"
+                style="font-size: 28px; color: red"></i></a>
+        <a id="wishlistbtn" class="w3-bar-item w3-button w3-right">
+            <button><i class="fas fa-user-alt"> Username</i></button>
+        </a>
+        <!-- </ul> -->
+    </header>
+
+    <section id="main">
+        <article id="main_list">
+            <br />
+
+            <input class="w3-input" type="text" name="searchbar" placeholder="Search movies ..." id="" />
+
+            <br />
+            <div id="empty_mainlist">
+                <h2>Loading Movies ...</h2>
+            </div>
+
+            <table class="w3-table w3-bordered">
+                <tr>
+                    <th>Title</th>
+                    <th>Year</th>
+                    <th>Genre</th>
+                    <th>Add to Wishlist</th>
+                </tr>
+                <tr>
+                    <td>127 hours</td>
+                    <td>2017</td>
+                    <td>Action</td>
+                    <td>
+                        <a href="">
+                            <i class="fas fa-heart" style="font-size: 28px; color: red"></i></a>
+                    </td>
+                </tr>
+            </table>
+        </article>
+    </section>
+</body>
+
+</html>
